@@ -1,6 +1,5 @@
 package com.example.mipt01;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -13,9 +12,6 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView tvMain;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,13 +23,9 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
-// senasis Legacy budas
+
     public void btnChangeText(View view) {
         TextView tvMain = (TextView)findViewById(R.id.tvMain);
         tvMain.setText("Hello");
     }
-
-    public void btnChangeColor(View view) {
-        TextView tvMain = (TextView)findViewById(R.id.tvMain);
-        tvMain.setTextColor(Color.GREEN);    }
 }
